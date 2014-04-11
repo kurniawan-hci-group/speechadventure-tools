@@ -1,0 +1,9 @@
+#JSGF V1.0;
+
+grammar bigRedTruck;
+
+public <bigRedTruck> = <big> <red> <truck>;
+<big> = BIG | BI | IG | I;
+<red> = RED | RE;
+<truck> = TRUCK | RUCK | TRU | RU;
+

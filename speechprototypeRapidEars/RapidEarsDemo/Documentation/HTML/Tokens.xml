@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+  <Token>
+    <TokenIdentifier>
+      <Name>OpenEarsEventsObserver+RapidEars</Name>
+      <APILanguage>c</APILanguage>
+      <Type>cat</Type>
+      <Scope>OpenEarsEventsObserver+RapidEars</Scope>
+    </TokenIdentifier>
+    <Path>category_open_ears_events_observer_07_rapid_ears_08.html</Path>
+    <Abstract>This plugin returns the results of your speech recognition by adding some new callbacks to the OpenEa...</Abstract>
+    <DeclaredIn>OpenEarsEventsObserver+RapidEars.h</DeclaredIn>
+  </Token>
+  <Token>
+    <TokenIdentifier>
+      <Name>PocketsphinxController+RapidEars</Name>
+      <APILanguage>c</APILanguage>
+      <Type>cat</Type>
+      <Scope>PocketsphinxController+RapidEars</Scope>
+    </TokenIdentifier>
+    <Path>category_pocketsphinx_controller_07_rapid_ears_08.html</Path>
+    <Abstract>A plugin which adds the ability to do live speech recognition to PocketsphinxController.</Abstract>
+    <DeclaredIn>PocketsphinxController+RapidEars.h</DeclaredIn>
+  </Token>
+</Tokens>

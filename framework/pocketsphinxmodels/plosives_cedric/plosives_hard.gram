@@ -1,0 +1,14 @@
+#JSGF V1.0;
+
+grammar plosives;
+
+public <plosives> = <sent1> | <sent2>;
+<sent1> = (<pop> | <blow>) <a> <balloon>;
+<sent2> = <wear> <a> <hat>;
+
+<pop> = POP | PO | OP | O;
+<a> = A;
+<balloon> = BALLOON | ALLOON | BAOON | AOON;
+<blow> = BLOW | LOW | BOW | OW;
+<wear> = WEAR;
+<hat> = HAT | HA;

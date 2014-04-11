@@ -1,0 +1,9 @@
+#JSGF V1.0;
+
+grammar takeTeddyToTown;
+
+public <takeTeddyToTown> = <take> <teddy> <to> <town>;
+<take> = TAKE | TA | AKE | A;
+<teddy> = TEDDY | EDDY | TEY | EY;
+<to> = TO | OO;
+<town> = TOWN | OWN;

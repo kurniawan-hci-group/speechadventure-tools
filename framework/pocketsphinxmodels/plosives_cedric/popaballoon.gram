@@ -1,0 +1,9 @@
+#JSGF V1.0;
+
+grammar popABalloon;
+
+public <popABallon> = <pop> <a> <balloon>;
+
+<pop> = POP | PO | OP | O;
+<a> = A;
+<balloon> = BALLOON | ALLOON | BAOON | AOON;

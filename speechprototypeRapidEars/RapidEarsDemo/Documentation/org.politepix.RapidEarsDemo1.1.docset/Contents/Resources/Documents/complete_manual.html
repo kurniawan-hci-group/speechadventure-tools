@@ -1,0 +1,305 @@
+<html style="height: 100%;"><header><style>.nobreak {page-break-after: always;page-break-inside: avoid;} pre { overflow-x: auto; /* Use horizontal scroller if needed; for Firefox 2, not needed in Firefox 3 */ white-space: pre-wrap; /* css-3 */ white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */ white-space: -pre-wrap; /* Opera 4-6 */ white-space: -o-pre-wrap; /* Opera 7 */ /* width: 99%; */ word-wrap: break-word; /* Internet Explorer 5.5+ */ }</style> <link rel="stylesheet" media="screen, projection" href="file:///Users/me/Documents/MultiEars/BuildSystem/pdf.css" /></header><body style="height: 100%;">
+<div class="nobreak"><div class="header">
+  <div class="headertitle"><div class="title"><h2>Introduction, Installation and Support </h2></div></div></div><!--header-->
+<div class="contents">
+<div class="textblock"><h1>Introduction</h1>
+<p>RapidEars is a plugin for OpenEars which adds the new ability to do real time speech recognition on in-progress speech for live voice recognition on the iPhone. If your application has a need for speed and you are shipping for devices that can support more CPU overhead (we recommend that this feature is restricted to the iPhone 4 and higher), all you have to do is install the RapidEars plugin in your working OpenEars project and PocketsphinxController and OpenEarsEventsObserver will get some new methods that will let you stop waiting for pauses in speech and start evaluating immediately. It's great for games or any application that needs real time speech recognition and fast feedback. Because of the optimizations that are needed to do instant recognition on the iPhone, it does not have the accuracy rates of PocketsphinxController in the stock version of OpenEars and should be used with smaller vocabularies.</p>
+<p>RapidEars can be purchased at the Politepix shop <a href="http://www.politepix.com/shop/rapidears">here</a> and we recommend thoroughly evaluating the demo version before purchasing, which can be downloaded from <a href="http://www.politepix.com/shop/rapidearsdemo">this shop page</a>. The installation and usage process is the same for both the demo and licensed version, but the demo times out after 3 minutes of use and can't be submitted to the App Store.</p>
+<p>The best way to get started using RapidEars is to get a tutorial from the <a href="http://www.politepix.com/openears/tutorial">Politepix interactive tutorial tool</a>. Steps for getting started and more in-depth documentation are also provided on this page.</p>
+<h1>Installation</h1>
+<p>How to install and use RapidEars:</p>
+<p>RapidEars is a plugin for OpenEars, so it is added to an already-working OpenEars project in order to enable new OpenEars features. In these instructions we are using the OpenEars sample app as an example for adding the plugin and new features, but the steps are basically the same for any app that already has a working OpenEars installation. Please note that RapidEars requires OpenEars 1.2.1 or greater.</p>
+<ol type="1">
+<li><a href="http://www.politepix.com/openears">Download and try out the OpenEars distribution and try the OpenEars sample app out</a>. RapidEars is a plug-in for OpenEars that is added to an OpenEars project so you first need a known-working OpenEars app to work with. The OpenEars sample app is fine for this to get started. You can also get a complete tutorial on both creating an OpenEars app and adding RapidEars to it using the automatic customized <a href="http://www.politepix.com/openears/tutorial">tutorial</a>.</li>
+<li>Open up the OpenEars Sample App in Xcode. Drag your downloaded RapidEarsDemo.framework into the OpenEars sample app project file navigator.</li>
+<li>Open up the Build Settings tab of your app or OpenEarsSampleApp and find the entry "Other Linker Flags" and add the linker flag "-ObjC". Do this for debug and release builds. More explanation of this step can be seen in the <a href="http://www.politepix.com/openears/tutorial">tutorial</a> by selecting the live recognition tutorial, which will also show exactly how to use the new methods added by RapidEars.</li>
+</ol>
+<h1>Support</h1>
+<p>You can have one free email support incident with the demo version of RapidEars, and as many questions on the OpenEars plugins forums as you like. To use your free email support incident, you must register your app and a verifiable name (company name or personal name) here.</p>
+<p>You can also send as many sales inquiries as you like through the contact form, and you don't need to register in order to do so, although a sales inquiry with a tech support question will be considered a support incident and we'll ask you to register in order to have it engaged.</p>
+<p>Once you have completed licensing of the framework for your app, you get two more email support incidents and continued forum support. Extra email support incidents for demo and licensed versions can always be purchased at the Politepix shop. Support contracts for multiple email support incidents with Politepix can also be purchased. Licensing the framework requires giving the exact application name that the framework will be linked to, so don't purchase the license until you know the app name. Please read on for the RapidEars documentation. </p>
+</div></div><!-- contents --></div>
+<div class="nobreak"><div class="header">
+  <div class="summary">
+<a href="category_open_ears_events_observer_07_rapid_ears_08-members.html"></a>  </div><a href="#pagetop"><span class="backtotop"><em>BACK TO TOP</em></span></a>
+  <div class="headertitle"><div class="title"><h1>OpenEarsEventsObserver+RapidEars Category Reference</h1></div></div></div><!--header-->
+<div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>This plugin returns the results of your speech recognition by adding some new callbacks to the OpenEarsEventsObserver. </p>
+<h2>Usage examples</h2>
+<blockquote class="doxtable">
+<p>What to add to your implementation:</p>
+<p></p>
+</blockquote>
+At the top of your implementation after the line
+<pre>
+#import &lt;OpenEars/OpenEarsEventsObserver.h&gt;
+</pre>
+
+Add the line
+
+<pre>
+#import &lt;RapidEarsDemo/OpenEarsEventsObserver+RapidEars.h&gt;
+</pre>
+
+And after this OpenEarsEventsObserver delegate method you added when setting up your OpenEars app:
+
+<pre>
+- (void) pocketSphinxContinuousSetupDidFail { 
+
+}
+</pre>
+
+Just add the following extended delegate methods:
+
+<pre>
+- (void) rapidEarsDidDetectLiveSpeechAsWordArray:(NSArray *)words andScoreArray:(NSArray *)scores {
+    NSLog(@"detected words: %@",[words componentsJoinedByString:@" "]);
+    // NSLog(@"detected scores: %@",scores);
+}
+
+- (void) rapidEarsDidDetectFinishedSpeechAsWordArray:(NSArray *)words andScoreArray:(NSArray *)scores {
+    NSString *hypothesis = [words componentsJoinedByString:@" "];
+    NSLog(@"detected complete statement: %@",hypothesis);
+    // NSLog(@"detected scores: %@",scores);
+}
+
+- (void) rapidEarsDidDetectBeginningOfSpeech {
+    NSLog(@"rapidEarsDidDetectBeginningOfSpeech"); 
+}
+
+- (void) rapidEarsDidDetectEndOfSpeech {
+    NSLog(@"rapidEarsDidDetectEndOfSpeech");
+}
+</pre>
+ </div><h2 class="groupheader">Method Documentation</h2>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) rapidEarsDidDetectLiveSpeechAsWordArray: </td>
+          <td></td>
+          <td class="paramtype">(NSArray *)&#160;</td>
+          <td class="paramname"><em>words</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">andScoreArray:</td>
+          <td></td>
+          <td class="paramtype">(NSArray *)&#160;</td>
+          <td class="paramname"><em>scores</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>The engine has detected in-progress speech. Words and respective scores are delivered in separate arrays with corresponding indexes. </p>
+
+</div>
+</div>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) rapidEarsDidDetectFinishedSpeechAsWordArray: </td>
+          <td></td>
+          <td class="paramtype">(NSArray *)&#160;</td>
+          <td class="paramname"><em>words</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">andScoreArray:</td>
+          <td></td>
+          <td class="paramtype">(NSArray *)&#160;</td>
+          <td class="paramname"><em>scores</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A final speech hypothesis was detected after the user paused. Words and respective scores are delivered in separate arrays with corresponding indexes. </p>
+
+</div>
+</div>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) rapidEarsDidDetectBeginningOfSpeech </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Speech has started. This is primarily intended as a UI state signal. </p>
+
+</div>
+</div>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) rapidEarsDidDetectEndOfSpeech </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Speech has ended. This is primarily intended as a UI state signal. </p>
+
+</div>
+</div>
+</div><!-- contents --></div>
+<div class="nobreak"><div class="header">
+  <div class="summary">
+<a href="category_pocketsphinx_controller_07_rapid_ears_08-members.html"></a>  </div><a href="#pagetop"><span class="backtotop"><em>BACK TO TOP</em></span></a>
+  <div class="headertitle"><div class="title"><h1>PocketsphinxController+RapidEars Category Reference</h1></div></div></div><!--header-->
+<div class="contents">
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A plugin which adds the ability to do live speech recognition to PocketsphinxController. </p>
+<h2>Usage examples</h2>
+<blockquote class="doxtable">
+<p>Preparing to use the class:</p>
+<p></p>
+</blockquote>
+<p>Like PocketsphinxController which it extends, we need a language model created with LanguageModelGenerator before using PocketsphinxController+RapidEars. We have already completed that step above.</p>
+ <blockquote class="doxtable">
+<p>What to add to your implementation:</p>
+<p></p>
+</blockquote>
+Add the following to your implementation (the .m file):
+
+Under the @implementation keyword at the top, after the line #import &lt;OpenEars/PocketsphinxController.h&gt;:
+<pre>
+#import &lt;RapidEarsDemo/PocketsphinxController+RapidEars.h&gt;
+</pre>
+
+Next, comment out all calls in your app to the method 
+<pre>startListeningWithLanguageModelAtPath:dictionaryAtPath:languageModelIsJSGF:</pre> and in the same part of your app where you were formerly using this method, place the following:
+
+<pre>
+[self.pocketsphinxController setRapidEarsToVerbose:FALSE]; // This defaults to FALSE but will give a lot of debug readout if set TRUE
+[self.pocketsphinxController setRapidEarsAccuracy:1]; // This defaults to 20, maximum accuracy, but can be set as low as 1 to save CPU
+[self.pocketsphinxController setFinalizeHypothesis:TRUE]; // This defaults to TRUE and will return a final hypothesis, but can be turned off to save a little CPU and will then return no final hypothesis; only partial "live" hypotheses.
+[self.pocketsphinxController setFasterPartials:TRUE]; // This will give faster rapid recognition with less accuracy. This is what you want in most cases since more accuracy for partial hypotheses will have a delay.
+[self.pocketsphinxController setFasterFinals:FALSE]; // This will give an accurate final recognition. You can have earlier final recognitions with less accuracy as well by setting this to TRUE.
+[self.pocketsphinxController startRealtimeListeningWithLanguageModelAtPath:lmPath andDictionaryAtPath:dicPath]; // Starts the rapid recognition loop.
+</pre>
+
+If you find that sometimes you are getting live recognition and other times not, make sure that you have definitely replaced all instances of startListeningWithLanguageModelAtPath:  with startRealtimeListeningWithLanguageModelAtPath:.
+ <dl class="section warning"><dt>Warning</dt><dd>There can only be one PocketsphinxController+RapidEars instance in your app. </dd></dl>
+</div><h2 class="groupheader">Method Documentation</h2>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) startRealtimeListeningWithLanguageModelAtPath: </td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>languageModelPath</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">andDictionaryAtPath:</td>
+          <td></td>
+          <td class="paramtype">(NSString *)&#160;</td>
+          <td class="paramname"><em>dictionaryPath</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Start the listening loop. You will call this instead of the old PocketsphinxController method </p>
+
+</div>
+</div>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) setRapidEarsToVerbose: </td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>verbose</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Turn logging on or off. </p>
+
+</div>
+</div>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) setRapidEarsAccuracy: </td>
+          <td></td>
+          <td class="paramtype">(int)&#160;</td>
+          <td class="paramname"><em>accuracy</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Scale from 1-20 where 1 is the least accurate and 20 is the most. This has an linear relationship with the CPU overhead. The best accuracy will still be less than that of Pocketsphinx in the stock OpenEars package and this only has a notable effect in cases where setFasterPartials is set to FALSE. Defaults to 20. </p>
+
+</div>
+</div>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) setFinalizeHypothesis: </td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>finalizeHypothesis</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>You can decide not to have the final hypothesis delivered if you are only interested in live hypotheses. This will save some CPU work. </p>
+
+</div>
+</div>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) setFasterPartials: </td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>fasterPartials</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This will give you faster partial hypotheses at the expense of accuracy </p>
+
+</div>
+</div>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) setFasterFinals: </td>
+          <td></td>
+          <td class="paramtype">(BOOL)&#160;</td>
+          <td class="paramname"><em>fasterPartials</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This will give you faster final hypotheses at the expense of accuracy. Setting this causes setFasterPartials to also be set. </p>
+
+</div>
+</div>
+</div><!-- contents --></div>
+</body></header></html>

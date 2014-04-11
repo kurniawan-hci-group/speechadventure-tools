@@ -1,0 +1,109 @@
+Language model created by QuickLM on Mon Apr 30 18:39:05 EDT 2012
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 14 sentences and 21 words
+
+\data\
+ngram 1=21
+ngram 2=32
+ngram 3=33
+
+\1-grams:
+-1.0414 </s> -0.3010
+-1.0414 <s> -0.2596
+-1.3424 A -0.2808
+-1.7104 AME -0.2596
+-2.1875 ASKETBALL -0.2896
+-2.1875 ASSHEHALL -0.2896
+-1.8865 BASKETBALL -0.2896
+-2.1875 DARE -0.2954
+-1.7104 FUN -0.2596
+-1.5855 GAME -0.2596
+-1.8865 HEIR -0.2925
+-1.7104 I -0.2925
+-1.5855 IS -0.2896
+-1.5855 LAY -0.2808
+-1.7104 LEHS -0.2808
+-2.1875 LENS -0.2896
+-1.7104 LETS -0.2808
+-2.1875 OU -0.2596
+-1.7104 PLAY -0.2808
+-2.1875 UN -0.2596
+-1.8865 YOU -0.2596
+
+\2-grams:
+-1.4472 <s> ASKETBALL 0.0000
+-1.4472 <s> ASSHEHALL 0.0000
+-1.1461 <s> BASKETBALL 0.0000
+-0.9700 <s> I 0.0000
+-0.9700 <s> LEHS 0.0000
+-1.4472 <s> LENS 0.0000
+-0.9700 <s> LETS 0.0000
+-0.6690 A AME 0.0000
+-0.5441 A GAME 0.0000
+-0.3010 AME </s> -0.3010
+-0.3010 ASKETBALL IS -0.0969
+-0.3010 ASSHEHALL IS -0.0969
+-0.3010 BASKETBALL IS 0.0000
+-0.3010 DARE YOU 0.0000
+-0.3010 FUN </s> -0.3010
+-0.3010 GAME </s> -0.3010
+-0.6021 HEIR OU 0.0000
+-0.6021 HEIR YOU 0.0000
+-0.7782 I DARE 0.0000
+-0.4771 I HEIR 0.0000
+-0.4260 IS FUN 0.0000
+-0.9031 IS UN 0.0000
+-0.3010 LAY A 0.0000
+-0.7782 LEHS LAY 0.0000
+-0.4771 LEHS PLAY 0.0000
+-0.3010 LENS LAY 0.0000
+-0.4771 LETS LAY 0.0000
+-0.7782 LETS PLAY 0.0000
+-0.3010 OU </s> -0.3010
+-0.3010 PLAY A 0.0000
+-0.3010 UN </s> -0.3010
+-0.3010 YOU </s> -0.3010
+
+\3-grams:
+-0.3010 <s> ASKETBALL IS
+-0.3010 <s> ASSHEHALL IS
+-0.3010 <s> BASKETBALL IS
+-0.7782 <s> I DARE
+-0.4771 <s> I HEIR
+-0.7782 <s> LEHS LAY
+-0.4771 <s> LEHS PLAY
+-0.3010 <s> LENS LAY
+-0.4771 <s> LETS LAY
+-0.7782 <s> LETS PLAY
+-0.3010 A AME </s>
+-0.3010 A GAME </s>
+-0.3010 ASKETBALL IS FUN
+-0.3010 ASSHEHALL IS FUN
+-0.6021 BASKETBALL IS FUN
+-0.6021 BASKETBALL IS UN
+-0.3010 DARE YOU </s>
+-0.3010 HEIR OU </s>
+-0.3010 HEIR YOU </s>
+-0.3010 I DARE YOU
+-0.6021 I HEIR OU
+-0.6021 I HEIR YOU
+-0.3010 IS FUN </s>
+-0.3010 IS UN </s>
+-0.6021 LAY A AME
+-0.6021 LAY A GAME
+-0.3010 LEHS LAY A
+-0.3010 LEHS PLAY A
+-0.3010 LENS LAY A
+-0.3010 LETS LAY A
+-0.3010 LETS PLAY A
+-0.7782 PLAY A AME
+-0.4771 PLAY A GAME
+
+\end\

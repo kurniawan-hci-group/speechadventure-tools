@@ -1,0 +1,81 @@
+Language model created by QuickLM on Mon May 13 01:41:47 EDT 2013
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 6 sentences and 16 words
+
+\data\
+ngram 1=16
+ngram 2=24
+ngram 3=18
+
+\1-grams:
+-1.0000 </s> -0.3010
+-1.0000 <s> -0.2553
+-1.4771 A -0.2863
+-1.7782 ALLOON -0.2553
+-1.7782 BALLOON -0.2553
+-1.7782 BLOW -0.2863
+-1.7782 BRIDGE -0.2553
+-1.7782 CROSS -0.2711
+-1.7782 EVER -0.2553
+-1.7782 LEVER -0.2553
+-1.7782 LOW -0.2863
+-1.7782 PULL -0.2711
+-1.7782 RIDGE -0.2553
+-1.7782 ROSS -0.2711
+-1.1761 THE -0.2711
+-1.7782 ULL -0.2711
+
+\2-grams:
+-1.0792 <s> BLOW 0.0000
+-1.0792 <s> CROSS 0.0000
+-1.0792 <s> LOW 0.0000
+-1.0792 <s> PULL 0.0000
+-1.0792 <s> ROSS 0.0000
+-1.0792 <s> ULL 0.0000
+-0.6021 A ALLOON 0.0000
+-0.6021 A BALLOON 0.0000
+-0.3010 ALLOON </s> -0.3010
+-0.3010 BALLOON </s> -0.3010
+-0.3010 BLOW A -0.1761
+-0.3010 BRIDGE </s> -0.3010
+-0.3010 CROSS THE -0.2430
+-0.3010 EVER </s> -0.3010
+-0.3010 LEVER </s> -0.3010
+-0.3010 LOW A -0.1761
+-0.3010 PULL THE -0.2430
+-0.3010 RIDGE </s> -0.3010
+-0.3010 ROSS THE -0.2430
+-0.9031 THE BRIDGE 0.0000
+-0.9031 THE EVER 0.0000
+-0.9031 THE LEVER 0.0000
+-0.9031 THE RIDGE 0.0000
+-0.3010 ULL THE -0.2430
+
+\3-grams:
+-0.3010 <s> BLOW A
+-0.3010 <s> CROSS THE
+-0.3010 <s> LOW A
+-0.3010 <s> PULL THE
+-0.3010 <s> ROSS THE
+-0.3010 <s> ULL THE
+-0.3010 A ALLOON </s>
+-0.3010 A BALLOON </s>
+-0.3010 BLOW A BALLOON
+-0.3010 CROSS THE BRIDGE
+-0.3010 LOW A ALLOON
+-0.3010 PULL THE LEVER
+-0.3010 ROSS THE RIDGE
+-0.3010 THE BRIDGE </s>
+-0.3010 THE EVER </s>
+-0.3010 THE LEVER </s>
+-0.3010 THE RIDGE </s>
+-0.3010 ULL THE EVER
+
+\end\

@@ -1,0 +1,327 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14878D1A1682D95700DADE07 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14878D191682D95700DADE07 /* UIKit.framework */; };
+		14878D1C1682D95700DADE07 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14878D1B1682D95700DADE07 /* Foundation.framework */; };
+		14878D1E1682D95700DADE07 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14878D1D1682D95700DADE07 /* CoreGraphics.framework */; };
+		14878D201682D95700DADE07 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14878D1F1682D95700DADE07 /* GLKit.framework */; };
+		14878D221682D95700DADE07 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14878D211682D95700DADE07 /* OpenGLES.framework */; };
+		14878D281682D95700DADE07 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 14878D261682D95700DADE07 /* InfoPlist.strings */; };
+		14878D2A1682D95700DADE07 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14878D291682D95700DADE07 /* main.m */; };
+		14878D2E1682D95800DADE07 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14878D2D1682D95800DADE07 /* AppDelegate.m */; };
+		14878D301682D95800DADE07 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 14878D2F1682D95800DADE07 /* Default.png */; };
+		14878D321682D95800DADE07 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14878D311682D95800DADE07 /* Default@2x.png */; };
+		14878D341682D95800DADE07 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 14878D331682D95800DADE07 /* Default-568h@2x.png */; };
+		14878D361682D95800DADE07 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 14878D351682D95800DADE07 /* Shader.fsh */; };
+		14878D381682D95800DADE07 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 14878D371682D95800DADE07 /* Shader.vsh */; };
+		14878D3B1682D95800DADE07 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14878D3A1682D95800DADE07 /* ViewController.m */; };
+		14878D3E1682D95800DADE07 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14878D3C1682D95800DADE07 /* ViewController_iPhone.xib */; };
+		14878D411682D95800DADE07 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14878D3F1682D95800DADE07 /* ViewController_iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		14878D151682D95700DADE07 /* SpeechAdventureOpenGL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechAdventureOpenGL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14878D191682D95700DADE07 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		14878D1B1682D95700DADE07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		14878D1D1682D95700DADE07 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		14878D1F1682D95700DADE07 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		14878D211682D95700DADE07 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		14878D251682D95700DADE07 /* SpeechAdventureOpenGL-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpeechAdventureOpenGL-Info.plist"; sourceTree = "<group>"; };
+		14878D271682D95700DADE07 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		14878D291682D95700DADE07 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		14878D2B1682D95700DADE07 /* SpeechAdventureOpenGL-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpeechAdventureOpenGL-Prefix.pch"; sourceTree = "<group>"; };
+		14878D2C1682D95700DADE07 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		14878D2D1682D95800DADE07 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		14878D2F1682D95800DADE07 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		14878D311682D95800DADE07 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		14878D331682D95800DADE07 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		14878D351682D95800DADE07 /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
+		14878D371682D95800DADE07 /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
+		14878D391682D95800DADE07 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		14878D3A1682D95800DADE07 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		14878D3D1682D95800DADE07 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		14878D401682D95800DADE07 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14878D121682D95700DADE07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14878D1A1682D95700DADE07 /* UIKit.framework in Frameworks */,
+				14878D1C1682D95700DADE07 /* Foundation.framework in Frameworks */,
+				14878D1E1682D95700DADE07 /* CoreGraphics.framework in Frameworks */,
+				14878D201682D95700DADE07 /* GLKit.framework in Frameworks */,
+				14878D221682D95700DADE07 /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14878D0A1682D95700DADE07 = {
+			isa = PBXGroup;
+			children = (
+				14878D231682D95700DADE07 /* SpeechAdventureOpenGL */,
+				14878D181682D95700DADE07 /* Frameworks */,
+				14878D161682D95700DADE07 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		14878D161682D95700DADE07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14878D151682D95700DADE07 /* SpeechAdventureOpenGL.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14878D181682D95700DADE07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14878D191682D95700DADE07 /* UIKit.framework */,
+				14878D1B1682D95700DADE07 /* Foundation.framework */,
+				14878D1D1682D95700DADE07 /* CoreGraphics.framework */,
+				14878D1F1682D95700DADE07 /* GLKit.framework */,
+				14878D211682D95700DADE07 /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		14878D231682D95700DADE07 /* SpeechAdventureOpenGL */ = {
+			isa = PBXGroup;
+			children = (
+				14878D2C1682D95700DADE07 /* AppDelegate.h */,
+				14878D2D1682D95800DADE07 /* AppDelegate.m */,
+				14878D351682D95800DADE07 /* Shader.fsh */,
+				14878D371682D95800DADE07 /* Shader.vsh */,
+				14878D391682D95800DADE07 /* ViewController.h */,
+				14878D3A1682D95800DADE07 /* ViewController.m */,
+				14878D3C1682D95800DADE07 /* ViewController_iPhone.xib */,
+				14878D3F1682D95800DADE07 /* ViewController_iPad.xib */,
+				14878D241682D95700DADE07 /* Supporting Files */,
+			);
+			path = SpeechAdventureOpenGL;
+			sourceTree = "<group>";
+		};
+		14878D241682D95700DADE07 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				14878D251682D95700DADE07 /* SpeechAdventureOpenGL-Info.plist */,
+				14878D261682D95700DADE07 /* InfoPlist.strings */,
+				14878D291682D95700DADE07 /* main.m */,
+				14878D2B1682D95700DADE07 /* SpeechAdventureOpenGL-Prefix.pch */,
+				14878D2F1682D95800DADE07 /* Default.png */,
+				14878D311682D95800DADE07 /* Default@2x.png */,
+				14878D331682D95800DADE07 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14878D141682D95700DADE07 /* SpeechAdventureOpenGL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14878D441682D95800DADE07 /* Build configuration list for PBXNativeTarget "SpeechAdventureOpenGL" */;
+			buildPhases = (
+				14878D111682D95700DADE07 /* Sources */,
+				14878D121682D95700DADE07 /* Frameworks */,
+				14878D131682D95700DADE07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpeechAdventureOpenGL;
+			productName = SpeechAdventureOpenGL;
+			productReference = 14878D151682D95700DADE07 /* SpeechAdventureOpenGL.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14878D0C1682D95700DADE07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Zak Rubin";
+			};
+			buildConfigurationList = 14878D0F1682D95700DADE07 /* Build configuration list for PBXProject "SpeechAdventureOpenGL" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 14878D0A1682D95700DADE07;
+			productRefGroup = 14878D161682D95700DADE07 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14878D141682D95700DADE07 /* SpeechAdventureOpenGL */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14878D131682D95700DADE07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14878D281682D95700DADE07 /* InfoPlist.strings in Resources */,
+				14878D301682D95800DADE07 /* Default.png in Resources */,
+				14878D321682D95800DADE07 /* Default@2x.png in Resources */,
+				14878D341682D95800DADE07 /* Default-568h@2x.png in Resources */,
+				14878D361682D95800DADE07 /* Shader.fsh in Resources */,
+				14878D381682D95800DADE07 /* Shader.vsh in Resources */,
+				14878D3E1682D95800DADE07 /* ViewController_iPhone.xib in Resources */,
+				14878D411682D95800DADE07 /* ViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14878D111682D95700DADE07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14878D2A1682D95700DADE07 /* main.m in Sources */,
+				14878D2E1682D95800DADE07 /* AppDelegate.m in Sources */,
+				14878D3B1682D95800DADE07 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		14878D261682D95700DADE07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14878D271682D95700DADE07 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		14878D3C1682D95800DADE07 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14878D3D1682D95800DADE07 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		14878D3F1682D95800DADE07 /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14878D401682D95800DADE07 /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		14878D421682D95800DADE07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		14878D431682D95800DADE07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		14878D451682D95800DADE07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpeechAdventureOpenGL/SpeechAdventureOpenGL-Prefix.pch";
+				INFOPLIST_FILE = "SpeechAdventureOpenGL/SpeechAdventureOpenGL-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		14878D461682D95800DADE07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpeechAdventureOpenGL/SpeechAdventureOpenGL-Prefix.pch";
+				INFOPLIST_FILE = "SpeechAdventureOpenGL/SpeechAdventureOpenGL-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14878D0F1682D95700DADE07 /* Build configuration list for PBXProject "SpeechAdventureOpenGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14878D421682D95800DADE07 /* Debug */,
+				14878D431682D95800DADE07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14878D441682D95800DADE07 /* Build configuration list for PBXNativeTarget "SpeechAdventureOpenGL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14878D451682D95800DADE07 /* Debug */,
+				14878D461682D95800DADE07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14878D0C1682D95700DADE07 /* Project object */;
+}

@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		82638AC5171F2D9A00E5AFE4 /* take_teddy_to_town.dic in Resources */ = {isa = PBXBuildFile; fileRef = 82638AC3171F2D9A00E5AFE4 /* take_teddy_to_town.dic */; };
+		82638AC6171F2D9A00E5AFE4 /* take_teddy_to_town.gram in Resources */ = {isa = PBXBuildFile; fileRef = 82638AC4171F2D9A00E5AFE4 /* take_teddy_to_town.gram */; };
+		82638AC8171F2FD100E5AFE4 /* take_teddy_to_town in Resources */ = {isa = PBXBuildFile; fileRef = 82638AC7171F2FD100E5AFE4 /* take_teddy_to_town */; };
+		82638ACA171F2FEE00E5AFE4 /* big_red_truck in Resources */ = {isa = PBXBuildFile; fileRef = 82638AC9171F2FEE00E5AFE4 /* big_red_truck */; };
+		82D0F53017160A4C00398465 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82D0F52F17160A4C00398465 /* UIKit.framework */; };
+		82D0F53217160A4C00398465 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82D0F53117160A4C00398465 /* Foundation.framework */; };
+		82D0F53417160A4C00398465 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82D0F53317160A4C00398465 /* CoreGraphics.framework */; };
+		82D0F53A17160A4C00398465 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 82D0F53817160A4C00398465 /* InfoPlist.strings */; };
+		82D0F53C17160A4C00398465 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D0F53B17160A4C00398465 /* main.m */; };
+		82D0F54017160A4C00398465 /* SpeechScoreAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D0F53F17160A4C00398465 /* SpeechScoreAppDelegate.m */; };
+		82D0F54217160A4C00398465 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 82D0F54117160A4C00398465 /* Default.png */; };
+		82D0F54417160A4C00398465 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82D0F54317160A4C00398465 /* Default@2x.png */; };
+		82D0F54617160A4C00398465 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82D0F54517160A4C00398465 /* Default-568h@2x.png */; };
+		82D0F56617160AA000398465 /* cmu07a.dic in Resources */ = {isa = PBXBuildFile; fileRef = 82D0F55617160AA000398465 /* cmu07a.dic */; };
+		82D0F56717160AA000398465 /* feat.params in Resources */ = {isa = PBXBuildFile; fileRef = 82D0F55817160AA000398465 /* feat.params */; };
+		82D0F56817160AA000398465 /* mdef in Resources */ = {isa = PBXBuildFile; fileRef = 82D0F55917160AA000398465 /* mdef */; };
+		82D0F56917160AA000398465 /* means in Resources */ = {isa = PBXBuildFile; fileRef = 82D0F55A17160AA000398465 /* means */; };
+		82D0F56A17160AA000398465 /* noisedict in Resources */ = {isa = PBXBuildFile; fileRef = 82D0F55B17160AA000398465 /* noisedict */; };
+		82D0F56B17160AA000398465 /* sendump in Resources */ = {isa = PBXBuildFile; fileRef = 82D0F55C17160AA000398465 /* sendump */; };
+		82D0F56C17160AA000398465 /* transition_matrices in Resources */ = {isa = PBXBuildFile; fileRef = 82D0F55D17160AA000398465 /* transition_matrices */; };
+		82D0F56D17160AA000398465 /* variances in Resources */ = {isa = PBXBuildFile; fileRef = 82D0F55E17160AA000398465 /* variances */; };
+		82D0F56E17160AA000398465 /* OpenEars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82D0F55F17160AA000398465 /* OpenEars.framework */; };
+		82D0F56F17160AA000398465 /* OpenEars1.dic in Resources */ = {isa = PBXBuildFile; fileRef = 82D0F56017160AA000398465 /* OpenEars1.dic */; };
+		82D0F57017160AA000398465 /* OpenEars1.gram in Resources */ = {isa = PBXBuildFile; fileRef = 82D0F56117160AA000398465 /* OpenEars1.gram */; };
+		82D0F57117160AA000398465 /* OpenEars1.languagemodel in Resources */ = {isa = PBXBuildFile; fileRef = 82D0F56217160AA000398465 /* OpenEars1.languagemodel */; };
+		82D0F57217160AA000398465 /* OpenEars2.gram in Resources */ = {isa = PBXBuildFile; fileRef = 82D0F56317160AA000398465 /* OpenEars2.gram */; };
+		82D0F57317160AA000398465 /* OpenEarsCorpus.txt in Resources */ = {isa = PBXBuildFile; fileRef = 82D0F56417160AA000398465 /* OpenEarsCorpus.txt */; };
+		82D0F57417160AA000398465 /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82D0F56517160AA000398465 /* Slt.framework */; };
+		82D0F57717160ACB00398465 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82D0F57517160ACB00398465 /* AudioToolbox.framework */; };
+		82D0F57817160ACB00398465 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82D0F57617160ACB00398465 /* AVFoundation.framework */; };
+		82D0F57B17160BD100398465 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82D0F57A17160BD100398465 /* ViewController.m */; };
+		82D0F594171617E700398465 /* big_red_truck.dic in Resources */ = {isa = PBXBuildFile; fileRef = 82D0F590171617E700398465 /* big_red_truck.dic */; };
+		82D0F596171617E700398465 /* big_red_truck.gram in Resources */ = {isa = PBXBuildFile; fileRef = 82D0F592171617E700398465 /* big_red_truck.gram */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		82638AC3171F2D9A00E5AFE4 /* take_teddy_to_town.dic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = take_teddy_to_town.dic; sourceTree = "<group>"; };
+		82638AC4171F2D9A00E5AFE4 /* take_teddy_to_town.gram */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = take_teddy_to_town.gram; sourceTree = "<group>"; };
+		82638AC7171F2FD100E5AFE4 /* take_teddy_to_town */ = {isa = PBXFileReference; lastKnownFileType = folder; name = take_teddy_to_town; path = assets/take_teddy_to_town; sourceTree = "<group>"; };
+		82638AC9171F2FEE00E5AFE4 /* big_red_truck */ = {isa = PBXFileReference; lastKnownFileType = folder; name = big_red_truck; path = assets/big_red_truck; sourceTree = "<group>"; };
+		82D0F52C17160A4C00398465 /* SpeechScore.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechScore.temp_caseinsensitive_rename.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		82D0F52F17160A4C00398465 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		82D0F53117160A4C00398465 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		82D0F53317160A4C00398465 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		82D0F53717160A4C00398465 /* SpeechScore.temp_caseinsensitive_rename-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpeechScore.temp_caseinsensitive_rename-Info.plist"; sourceTree = "<group>"; };
+		82D0F53917160A4C00398465 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		82D0F53B17160A4C00398465 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		82D0F53D17160A4C00398465 /* SpeechScore.temp_caseinsensitive_rename-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpeechScore.temp_caseinsensitive_rename-Prefix.pch"; sourceTree = "<group>"; };
+		82D0F53E17160A4C00398465 /* SpeechScoreAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeechScoreAppDelegate.h; sourceTree = "<group>"; };
+		82D0F53F17160A4C00398465 /* SpeechScoreAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeechScoreAppDelegate.m; sourceTree = "<group>"; };
+		82D0F54117160A4C00398465 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		82D0F54317160A4C00398465 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		82D0F54517160A4C00398465 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		82D0F55617160AA000398465 /* cmu07a.dic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cmu07a.dic; sourceTree = "<group>"; };
+		82D0F55817160AA000398465 /* feat.params */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = feat.params; sourceTree = "<group>"; };
+		82D0F55917160AA000398465 /* mdef */ = {isa = PBXFileReference; lastKnownFileType = file; path = mdef; sourceTree = "<group>"; };
+		82D0F55A17160AA000398465 /* means */ = {isa = PBXFileReference; lastKnownFileType = file; path = means; sourceTree = "<group>"; };
+		82D0F55B17160AA000398465 /* noisedict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = noisedict; sourceTree = "<group>"; };
+		82D0F55C17160AA000398465 /* sendump */ = {isa = PBXFileReference; lastKnownFileType = file; path = sendump; sourceTree = "<group>"; };
+		82D0F55D17160AA000398465 /* transition_matrices */ = {isa = PBXFileReference; lastKnownFileType = file; path = transition_matrices; sourceTree = "<group>"; };
+		82D0F55E17160AA000398465 /* variances */ = {isa = PBXFileReference; lastKnownFileType = file; path = variances; sourceTree = "<group>"; };
+		82D0F55F17160AA000398465 /* OpenEars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenEars.framework; sourceTree = "<group>"; };
+		82D0F56017160AA000398465 /* OpenEars1.dic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OpenEars1.dic; sourceTree = "<group>"; };
+		82D0F56117160AA000398465 /* OpenEars1.gram */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OpenEars1.gram; sourceTree = "<group>"; };
+		82D0F56217160AA000398465 /* OpenEars1.languagemodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OpenEars1.languagemodel; sourceTree = "<group>"; };
+		82D0F56317160AA000398465 /* OpenEars2.gram */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OpenEars2.gram; sourceTree = "<group>"; };
+		82D0F56417160AA000398465 /* OpenEarsCorpus.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OpenEarsCorpus.txt; sourceTree = "<group>"; };
+		82D0F56517160AA000398465 /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Slt.framework; sourceTree = "<group>"; };
+		82D0F57517160ACB00398465 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		82D0F57617160ACB00398465 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		82D0F57917160BD100398465 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		82D0F57A17160BD100398465 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		82D0F590171617E700398465 /* big_red_truck.dic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = big_red_truck.dic; sourceTree = "<group>"; };
+		82D0F592171617E700398465 /* big_red_truck.gram */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = big_red_truck.gram; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82D0F52917160A4C00398465 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82D0F57717160ACB00398465 /* AudioToolbox.framework in Frameworks */,
+				82D0F57817160ACB00398465 /* AVFoundation.framework in Frameworks */,
+				82D0F53017160A4C00398465 /* UIKit.framework in Frameworks */,
+				82D0F53217160A4C00398465 /* Foundation.framework in Frameworks */,
+				82D0F53417160A4C00398465 /* CoreGraphics.framework in Frameworks */,
+				82D0F56E17160AA000398465 /* OpenEars.framework in Frameworks */,
+				82D0F57417160AA000398465 /* Slt.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		82D0F52317160A4C00398465 = {
+			isa = PBXGroup;
+			children = (
+				82D4EADF171BC9190099A1DA /* assets */,
+				82D0F58E171617E600398465 /* models */,
+				82D0F53517160A4C00398465 /* speechScore */,
+				82D0F52E17160A4C00398465 /* Frameworks */,
+				82D0F52D17160A4C00398465 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		82D0F52D17160A4C00398465 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82D0F52C17160A4C00398465 /* SpeechScore.temp_caseinsensitive_rename.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82D0F52E17160A4C00398465 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82D0F57617160ACB00398465 /* AVFoundation.framework */,
+				82D0F57517160ACB00398465 /* AudioToolbox.framework */,
+				82D0F55517160AA000398465 /* Framework */,
+				82D0F52F17160A4C00398465 /* UIKit.framework */,
+				82D0F53117160A4C00398465 /* Foundation.framework */,
+				82D0F53317160A4C00398465 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		82D0F53517160A4C00398465 /* speechScore */ = {
+			isa = PBXGroup;
+			children = (
+				82D0F53E17160A4C00398465 /* SpeechScoreAppDelegate.h */,
+				82D0F53F17160A4C00398465 /* SpeechScoreAppDelegate.m */,
+				82D0F53617160A4C00398465 /* Supporting Files */,
+				82D0F57917160BD100398465 /* ViewController.h */,
+				82D0F57A17160BD100398465 /* ViewController.m */,
+			);
+			path = speechScore;
+			sourceTree = "<group>";
+		};
+		82D0F53617160A4C00398465 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				82D0F53717160A4C00398465 /* SpeechScore.temp_caseinsensitive_rename-Info.plist */,
+				82D0F53817160A4C00398465 /* InfoPlist.strings */,
+				82D0F53B17160A4C00398465 /* main.m */,
+				82D0F53D17160A4C00398465 /* SpeechScore.temp_caseinsensitive_rename-Prefix.pch */,
+				82D0F54117160A4C00398465 /* Default.png */,
+				82D0F54317160A4C00398465 /* Default@2x.png */,
+				82D0F54517160A4C00398465 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		82D0F55517160AA000398465 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				82D0F55617160AA000398465 /* cmu07a.dic */,
+				82D0F55717160AA000398465 /* hub4wsj_sc_8k */,
+				82D0F55F17160AA000398465 /* OpenEars.framework */,
+				82D0F56017160AA000398465 /* OpenEars1.dic */,
+				82D0F56117160AA000398465 /* OpenEars1.gram */,
+				82D0F56217160AA000398465 /* OpenEars1.languagemodel */,
+				82D0F56317160AA000398465 /* OpenEars2.gram */,
+				82D0F56417160AA000398465 /* OpenEarsCorpus.txt */,
+				82D0F56517160AA000398465 /* Slt.framework */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		82D0F55717160AA000398465 /* hub4wsj_sc_8k */ = {
+			isa = PBXGroup;
+			children = (
+				82D0F55817160AA000398465 /* feat.params */,
+				82D0F55917160AA000398465 /* mdef */,
+				82D0F55A17160AA000398465 /* means */,
+				82D0F55B17160AA000398465 /* noisedict */,
+				82D0F55C17160AA000398465 /* sendump */,
+				82D0F55D17160AA000398465 /* transition_matrices */,
+				82D0F55E17160AA000398465 /* variances */,
+			);
+			path = hub4wsj_sc_8k;
+			sourceTree = "<group>";
+		};
+		82D0F58E171617E600398465 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				82D0F590171617E700398465 /* big_red_truck.dic */,
+				82638AC3171F2D9A00E5AFE4 /* take_teddy_to_town.dic */,
+				82638AC4171F2D9A00E5AFE4 /* take_teddy_to_town.gram */,
+				82D0F592171617E700398465 /* big_red_truck.gram */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		82D4EADF171BC9190099A1DA /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				82D4EAE0171BC9220099A1DA /* wav */,
+			);
+			name = assets;
+			sourceTree = "<group>";
+		};
+		82D4EAE0171BC9220099A1DA /* wav */ = {
+			isa = PBXGroup;
+			children = (
+				82638AC9171F2FEE00E5AFE4 /* big_red_truck */,
+				82638AC7171F2FD100E5AFE4 /* take_teddy_to_town */,
+			);
+			name = wav;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		82D0F52B17160A4C00398465 /* SpeechScore.temp_caseinsensitive_rename */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82D0F54917160A4C00398465 /* Build configuration list for PBXNativeTarget "SpeechScore.temp_caseinsensitive_rename" */;
+			buildPhases = (
+				82D0F52817160A4C00398465 /* Sources */,
+				82D0F52917160A4C00398465 /* Frameworks */,
+				82D0F52A17160A4C00398465 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpeechScore.temp_caseinsensitive_rename;
+			productName = speechScore;
+			productReference = 82D0F52C17160A4C00398465 /* SpeechScore.temp_caseinsensitive_rename.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82D0F52417160A4C00398465 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = speechScore;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Cédric Foucault";
+			};
+			buildConfigurationList = 82D0F52717160A4C00398465 /* Build configuration list for PBXProject "SpeechScore" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 82D0F52317160A4C00398465;
+			productRefGroup = 82D0F52D17160A4C00398465 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82D0F52B17160A4C00398465 /* SpeechScore.temp_caseinsensitive_rename */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82D0F52A17160A4C00398465 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82D0F53A17160A4C00398465 /* InfoPlist.strings in Resources */,
+				82D0F54217160A4C00398465 /* Default.png in Resources */,
+				82D0F54417160A4C00398465 /* Default@2x.png in Resources */,
+				82D0F54617160A4C00398465 /* Default-568h@2x.png in Resources */,
+				82D0F56617160AA000398465 /* cmu07a.dic in Resources */,
+				82D0F56717160AA000398465 /* feat.params in Resources */,
+				82D0F56817160AA000398465 /* mdef in Resources */,
+				82D0F56917160AA000398465 /* means in Resources */,
+				82D0F56A17160AA000398465 /* noisedict in Resources */,
+				82D0F56B17160AA000398465 /* sendump in Resources */,
+				82D0F56C17160AA000398465 /* transition_matrices in Resources */,
+				82D0F56D17160AA000398465 /* variances in Resources */,
+				82D0F56F17160AA000398465 /* OpenEars1.dic in Resources */,
+				82D0F57017160AA000398465 /* OpenEars1.gram in Resources */,
+				82D0F57117160AA000398465 /* OpenEars1.languagemodel in Resources */,
+				82D0F57217160AA000398465 /* OpenEars2.gram in Resources */,
+				82D0F57317160AA000398465 /* OpenEarsCorpus.txt in Resources */,
+				82D0F594171617E700398465 /* big_red_truck.dic in Resources */,
+				82D0F596171617E700398465 /* big_red_truck.gram in Resources */,
+				82638AC5171F2D9A00E5AFE4 /* take_teddy_to_town.dic in Resources */,
+				82638AC6171F2D9A00E5AFE4 /* take_teddy_to_town.gram in Resources */,
+				82638AC8171F2FD100E5AFE4 /* take_teddy_to_town in Resources */,
+				82638ACA171F2FEE00E5AFE4 /* big_red_truck in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82D0F52817160A4C00398465 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82D0F53C17160A4C00398465 /* main.m in Sources */,
+				82D0F54017160A4C00398465 /* SpeechScoreAppDelegate.m in Sources */,
+				82D0F57B17160BD100398465 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		82D0F53817160A4C00398465 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82D0F53917160A4C00398465 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		82D0F54717160A4C00398465 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		82D0F54817160A4C00398465 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		82D0F54A17160A4C00398465 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Framework\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "speechScore/SpeechScore.temp_caseinsensitive_rename-Prefix.pch";
+				INFOPLIST_FILE = "speechScore/SpeechScore.temp_caseinsensitive_rename-Info.plist";
+				PRODUCT_NAME = SpeechScore.temp_caseinsensitive_rename;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		82D0F54B17160A4C00398465 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Framework\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "speechScore/SpeechScore.temp_caseinsensitive_rename-Prefix.pch";
+				INFOPLIST_FILE = "speechScore/SpeechScore.temp_caseinsensitive_rename-Info.plist";
+				PRODUCT_NAME = SpeechScore.temp_caseinsensitive_rename;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82D0F52717160A4C00398465 /* Build configuration list for PBXProject "SpeechScore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82D0F54717160A4C00398465 /* Debug */,
+				82D0F54817160A4C00398465 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82D0F54917160A4C00398465 /* Build configuration list for PBXNativeTarget "SpeechScore.temp_caseinsensitive_rename" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82D0F54A17160A4C00398465 /* Debug */,
+				82D0F54B17160A4C00398465 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 82D0F52417160A4C00398465 /* Project object */;
+}

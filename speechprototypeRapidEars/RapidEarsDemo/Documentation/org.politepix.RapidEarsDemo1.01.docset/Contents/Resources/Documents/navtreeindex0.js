@@ -1,0 +1,19 @@
+var NAVTREEINDEX0 =
+{
+"annotated.html":[1],
+"category_open_ears_events_observer_07_rapid_ears_08.html":[1,0],
+"category_open_ears_events_observer_07_rapid_ears_08.html#a5e965382691279c61a10d0287c848721":[1,0,0],
+"category_open_ears_events_observer_07_rapid_ears_08.html#a8795d09daffafead124aceea8582694a":[1,0,2],
+"category_open_ears_events_observer_07_rapid_ears_08.html#acb2ccb3b0530534607bd02db9c885a01":[1,0,3],
+"category_open_ears_events_observer_07_rapid_ears_08.html#ae50650868beb00fc019c49783455abca":[1,0,1],
+"category_pocketsphinx_controller_07_rapid_ears_08.html":[1,1],
+"category_pocketsphinx_controller_07_rapid_ears_08.html#a0bc7f393475c61c3774bfaefc3d41301":[1,1,2],
+"category_pocketsphinx_controller_07_rapid_ears_08.html#a46b2e026a1cbfdab89ea9c34445a5adb":[1,1,4],
+"category_pocketsphinx_controller_07_rapid_ears_08.html#a5ee63e2e182e00042f0dd66cc3e05c53":[1,1,1],
+"category_pocketsphinx_controller_07_rapid_ears_08.html#a713d120195571baffbcbb8e83cf1b3a9":[1,1,0],
+"category_pocketsphinx_controller_07_rapid_ears_08.html#a8af7800d5bfc292ecc12e11d450663a1":[1,1,5],
+"category_pocketsphinx_controller_07_rapid_ears_08.html#aa3d50ead8d05ab6688a0d1bc9dc5db07":[1,1,3],
+"index.html":[],
+"index.html":[0],
+"pages.html":[]
+};

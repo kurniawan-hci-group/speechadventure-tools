@@ -1,0 +1,104 @@
+Language model created by QuickLM on Fri May 11 19:10:57 EDT 2012
+Copyright (c) 1996-2010 Carnegie Mellon University and Alexander I. Rudnicky
+
+The model is in standard ARPA format, designed by Doug Paul while he was at MITRE.
+
+The code that was used to produce this language model is available in Open Source.
+Please visit http://www.speech.cs.cmu.edu/tools/ for more information
+
+The (fixed) discount mass is 0.5. The backoffs are computed using the ratio method.
+This model based on a corpus of 17 sentences and 18 words
+
+\data\
+ngram 1=18
+ngram 2=31
+ngram 3=32
+
+\1-grams:
+-0.9949 </s> -0.3010
+-0.9949 <s> -0.2061
+-0.9949 A -0.2547
+-2.2253 AH -0.2547
+-1.9243 AHF -0.2547
+-1.9243 AHT -0.2547
+-1.9243 ALOON -0.2547
+-1.7482 BALLOON -0.2547
+-1.9243 BLOW -0.2547
+-2.2253 HAH -0.2547
+-1.7482 HAIR -0.2547
+-1.5263 HALLOON -0.2547
+-2.2253 HALLOUH -0.2547
+-1.9243 HAT -0.2547
+-2.2253 HLOW -0.2547
+-1.9243 PAH -0.2547
+-1.7482 POP -0.2547
+-1.7482 WEAR -0.2547
+
+\2-grams:
+-1.5315 <s> A -0.2881
+-1.5315 <s> AH 0.0000
+-1.2304 <s> BLOW 0.0000
+-1.5315 <s> HAH 0.0000
+-1.0544 <s> HAIR 0.0000
+-1.5315 <s> HLOW 0.0000
+-1.2304 <s> PAH 0.0000
+-1.0544 <s> POP 0.0000
+-1.0544 <s> WEAR 0.0000
+-1.2304 A AHF 0.0000
+-1.2304 A AHT 0.0000
+-1.2304 A ALOON 0.0000
+-1.0544 A BALLOON 0.0000
+-0.8325 A HALLOON 0.0000
+-1.5315 A HALLOUH 0.0000
+-1.2304 A HAT 0.0000
+-0.3010 AH A -0.2747
+-0.3010 AHF </s> -0.3010
+-0.3010 AHT </s> -0.3010
+-0.3010 ALOON </s> -0.3010
+-0.3010 BALLOON </s> -0.3010
+-0.3010 BLOW A -0.1845
+-0.3010 HAH A -0.2319
+-0.3010 HAIR A -0.2167
+-0.3010 HALLOON </s> -0.3010
+-0.3010 HALLOUH </s> -0.3010
+-0.3010 HAT </s> -0.3010
+-0.3010 HLOW A -0.2319
+-0.3010 PAH A -0.1845
+-0.3010 POP A -0.1498
+-0.3010 WEAR A -0.2167
+
+\3-grams:
+-0.3010 <s> A HALLOUH
+-0.3010 <s> AH A
+-0.3010 <s> BLOW A
+-0.3010 <s> HAH A
+-0.3010 <s> HAIR A
+-0.3010 <s> HLOW A
+-0.3010 <s> PAH A
+-0.3010 <s> POP A
+-0.3010 <s> WEAR A
+-0.3010 A AHF </s>
+-0.3010 A AHT </s>
+-0.3010 A ALOON </s>
+-0.3010 A BALLOON </s>
+-0.3010 A HALLOON </s>
+-0.3010 A HALLOUH </s>
+-0.3010 A HAT </s>
+-0.3010 AH A ALOON
+-0.6021 BLOW A BALLOON
+-0.6021 BLOW A HALLOON
+-0.3010 HAH A HALLOON
+-0.7782 HAIR A AHF
+-0.7782 HAIR A AHT
+-0.7782 HAIR A HAT
+-0.3010 HLOW A HALLOON
+-0.6021 PAH A BALLOON
+-0.6021 PAH A HALLOON
+-0.7782 POP A ALOON
+-0.7782 POP A BALLOON
+-0.7782 POP A HALLOON
+-0.7782 WEAR A AHF
+-0.7782 WEAR A AHT
+-0.7782 WEAR A HAT
+
+\end\
